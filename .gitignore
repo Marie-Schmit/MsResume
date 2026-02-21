@@ -1,5 +1,5 @@
 node_modules
 .DS_Store
 profile.jpg
-assets/img/*
-assets/img/carousel/
+./src.assets/img/*
+./src/assets/img/carousel/
