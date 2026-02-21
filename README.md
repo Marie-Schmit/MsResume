@@ -1,4 +1,4 @@
-A website showinh my resume, cloned from https://startbootstrap.com/theme/resume/.
+A website showing my resume, cloned from https://startbootstrap.com/theme/resume/.
 
 ## Usage
 
