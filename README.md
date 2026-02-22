@@ -2,6 +2,8 @@ A website showing my resume, cloned from https://startbootstrap.com/theme/resume
 
 Clone the source files of the theme and navigate into the theme's root directory. Run `npm install` and then run `npm start` which will open up a preview of the website in your default browser.
 
+To update GitHub pages, run ```npm deploy```, then ```git subtree push --prefix dist origin gh-pages``` in main.
+
 #### npm Scripts
 
 - `npm run build` builds the project - this builds assets, HTML, JS, and CSS into `dist`
