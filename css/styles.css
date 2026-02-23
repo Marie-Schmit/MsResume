@@ -11006,3 +11006,35 @@ section.resume-section .resume-section-content {
 .carousel-control-next-icon {
   color: #92a490;
 }
+
+.publication-item {
+  border-left: 3px solid #92a490;
+  padding-left: 15px;
+}
+
+.publication-item h4 a, .publication-item .h4 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.publication-item h4 a:hover, .publication-item .h4 a:hover {
+  color: #92a490;
+}
+
+.fa-file-pdf, .ai-doi {
+  font-size: 1.2em;
+}
+
+.publication-box {
+  background-color: #e8e2dc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #cec4b0;
+}
+
+/* Hover effect for better UX */
+.publication-box:hover {
+  border: 1px solid #92a490;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
