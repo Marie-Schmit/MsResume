@@ -86,7 +86,9 @@
   padding: 15px;
   margin-bottom: 20px;
   border: 1px solid #cec4b0;
-  width: 45%;
+  flex: 1 0 calc(50% - 20px); // Default: 2 cards per row
+  max-width: 500px;
+  box-sizing: border-box;
 }
 
 .card:hover {
@@ -131,8 +133,14 @@
   font-family: $font-family-base;
 }
 
+@media (max-width: 992px) {
+  .card {
+    flex: 0 0 calc(100% - 20px); /* Two cards per row on medium screens */
+  }
+}
+
 @media (max-width: 768px) {
   .card {
-    width: 100%;
+    flex: 0 0 100%; /* Full width on small screens */
   }
 }
