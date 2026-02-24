@@ -210,12 +210,12 @@ html(lang='en')
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
-                            h3.mb-0 System engineer in Computer Science and Microelectronics
+                            h3.mb-0 System engineer in Computer Science and Microelectronics (ISMIN)
                             .subheading.mb-3 Ecole des Mines de Saint-Etienne (FR, Gardanne)
                             div 
                             p
                                 strong.text-primary Computer Science
-                                | (C and C++, SQL, Python, Machine Learning), algorithmic, graph and optimisation, microelectronics (embedded C, Assembleur), management.
+                                | (C and C++, SQL, Python, Machine Learning), algorithmic, graph and optimisation, statistics and probabilities, microelectronics (embedded C, Assembleur), management.
                         .flex-shrink-0
                             span.text-primary Sept 2020 - Sept 2023
                     
@@ -336,8 +336,8 @@ html(lang='en')
                                 i.fas.fa-solid.fa-person-chalkboard
                             | Oral presentation, written communication
                         li
-                            i.fas.fa-users
-                                i.fas.fa-solid.fa-person-chalkboard
+                            i.fa-li
+                                i.fas.fa-users
                             | Multi-tasking, autonomy
                     .subheading.mb-1.mt-3 Bureautique
                     ul.fa-ul.mb-0
@@ -421,38 +421,96 @@ html(lang='en')
             section#interests.resume-section
                 .resume-section-content
                     h2.mb-5 Interests & Volunteering
-                        .subheading.mb-1.mt-3 Volunteering
-                        ul.fa-ul.mb-0
-                            li
-                                span.fa-li
-                                    i.fa-solid.fa-diagram-project
-                                | FEI
-                            li
-                                span.fa-li
-                                    i.fa-brands.fa-python
-                                | Gala 
-                            li
-                                span.fa-li
-                                    i.fa-solid.fa-file-lines
-                                | SolidarISMIN
-                            li
-                                span.fa-li
-                                    i.fa-solid.fa-file-lines
-                                | BDS
-                        .subheading.mb-1.mt-3 Interests
-                        ul.fa-ul.mb-0
-                            li
-                                span.fa-li
-                                    i.fa-solid.fa-diagram-project
-                                | Reading
-                            li
-                                span.fa-li
-                                    i.fa-brands.fa-python
-                                | Gardening 
-                            li
-                                span.fa-li
-                                    i.fa-solid.fa-file-lines
-                                | Baking
+                    .subheading.mb-1.mt-3 Volunteering
+                        .card.d-flex.flex-column.p-3.mb-4.rounded
+                            img.card-img(src='assets/img/profile.jpg', alt='Card image')
+                            .card-body
+                                h5.card-title Communication manager, co-funder - SolidarISMIN (student charity)
+                                span.card-date 2021-2023
+                                p.interest-text
+                                    | Communication within the campus (students, administration). Management of the association's social media accounts. Written and visual communication.
+                                    br
+                                    | Fundraising, student awareness and mobilisation, organisation of events and partnerships for various associations (
+                                    a(href="https://associationaida.org/") Aïda
+                                    | ,
+                                    a(href="https://www.regleselementaires.com/") Règles élémentaires
+                                    | ,
+                                    a(href="https://anrfrance.org/") Association Neurofibromatoses et Recklinghausen
+                                    | ).
+                                    br
+                                    | Supervision and coordination.
+                    // Card 2
+                    .interest-card
+                        h5.interest-title Volunteer - Red Cross
+                        span.interest-date 2019-2021
+                        p.interest-text
+                        | Assisted in organizing blood drives and community outreach programs.
+                        br
+                        | Provided first aid training and support during local events.
+
+                    // Card 3
+                    .interest-card
+                        h5.interest-title Mentor - Coding for Kids
+                        span.interest-date 2018-2020
+                        p.interest-text
+                        | Mentored children in basic programming and computational thinking.
+                        br
+                        | Developed educational materials and organized coding workshops.
+
+                    ul.fa-ul.mb-0
+                        li
+                            span.fa-li
+                                i.fa-solid.fa-file-lines
+                            .subsubheading.mb-1.mt-1 Communication manager, co-funder - SolidarISMIN (student charity)
+                            | Communication within the campus (students, administration). Management of the association's social media accounts. Written and visual communication.
+
+                            | Fundraising, student awareness and mobilisation, organisation of events and partnerships for various associations (
+                            a(href="https://associationaida.org/") Aïda
+                            |,
+                            a(href = "https://www.regleselementaires.com/") Règles élémentaires
+                            |, 
+                            a(href="https://anrfrance.org/") AssociationNeurofibromatoses et Recklinghausen
+                            |).
+
+                            | Supervision of first-year students as part of the Engineers in Action solidarity project (organisation of a pétanque tournament in the town of Gardanne, with proceeds donated to the Restos du Coeur charity).
+
+                            | For Aïda: Fundraising, awareness raising and communication for the fight against youth cancer.
+                            .flex-shrink-0
+                                span.text-primary 2021-2023
+                        li
+                            span.fa-li
+                                i.fa-solid.fa-diagram-project
+                            | Logistic manager - FEI (Forum Entreprises ISMIN)
+                            //- .flex-shrink-0
+                            //-     span.text-primary 2021-2022
+                        li
+                            span.fa-li
+                                i.fa-brands.fa-python
+                            | Communication manager - Gala 
+                            .flex-shrink-0
+                                span.text-primary 2021-2022
+                        li
+                            span.fa-li
+                                i.fa-solid.fa-file-lines
+                            | Students sports office
+                            .flex-shrink-0
+                                span.text-primary 2021-2022
+                        li
+                            span.fa-li
+                                i.fa-solid.fa-file-lines
+                            | Société Protectrice des Animaux (SPA)
+                            .flex-shrink-0
+                                span.text-primary 2021
+                    .subheading.mb-1.mt-3 Interests
+                    ul.fa-ul.mb-0
+                        li
+                            span.fa-li
+                                i.fa-solid.fa-diagram-project
+                            | Reading
+                        li
+                            span.fa-li
+                                i.fa-brands.fa-python
+                            | Gardening
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
