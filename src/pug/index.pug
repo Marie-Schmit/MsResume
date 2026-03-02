@@ -47,10 +47,14 @@ html(lang='en')
                         a.nav-link.js-scroll-trigger(href='#skills') Skills
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#publications') Publications
-                    //- li.nav-item
-                        //- a.nav-link.js-scroll-trigger(href='#projects') Personal Projects
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#interests') Interests & Volunteering 
+                        a.nav-link.js-scroll-trigger(href='#posters') Posters & Presentations
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#formations') Formations
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#projects') Personal Projects
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#interests') Interests & Volunteering
 
         // Page Content
         .container-fluid.p-0
@@ -144,12 +148,12 @@ html(lang='en')
                                 | enabling efficient metadata retrieval for the project 
                                 a(href="https://projet.liris.cnrs.fr/sharefair/") ShareFAIR.
                                 | Applying best practices on code reproducibility.
-                                | Technical integration and lead. Help coordinating the project (organisation, scheduling, communication).
+                                | Technical integration and lead. Help coordinating the project (hackathons and events organisation, scheduling, communication).
                             p
                                 strong.text-primary Tools: 
                                 | Python, Docker, SPARQL, SQL, JavaScript, Bash
                         .flex-shrink-0
-                            span.text-primary November 2023 - Present
+                            span.text-primary 2023 - Present
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
@@ -302,6 +306,10 @@ html(lang='en')
                         li
                             span.fa-li
                                 i.fa-solid.fa-diagram-project
+                            | FAIR principles
+                        li
+                            span.fa-li
+                                i.fa-solid.fa-diagram-project
                             | Snakemake, Nextflow
                         li
                             span.fa-li
@@ -310,7 +318,7 @@ html(lang='en')
                         li
                             span.fa-li
                                 i.fa-solid.fa-file-lines
-                            | Data manipulation (fasta, gff), genomic data visualisation
+                            | Data manipulation and analysis (FASTA, FASTQ, gff), genomic data visualisation (CMap)
                         li
                             span.fa-li
                                 i.fa-solid.fa-dna
@@ -333,23 +341,28 @@ html(lang='en')
                     ul.fa-ul.mb-0
                         li
                             span.fa-li
+                                i.fa-solid.fa-newspaper
+                            | Scientific writing (scientific papers, presentations)
+                        li
+                            span.fa-li
                                 i.fa-solid.fa-calendar-check
                             | Time-management, planning and organisation
                         li
                             span.fa-li
+                                i.fa-solid.fa-calendar-check
+                            | Autonomy and versatility
+                        li
+                            span.fa-li
                                 i.fas.fa-solid.fa-person-chalkboard
                             | Oral presentation, written communication
-                        li
-                            i.fa-li
-                                i.fas.fa-users
-                            | Polyvalent, multi-tasking, autonomy
+                        F
                     .subheading.mb-1.mt-3 Bureautique
                     ul.fa-ul.mb-0
                         li
                             span.fa-li
                                 i.fa-brands.fa-tex
                             | LaTex, Microsoft Word, Microsoft PowerPoints
-                    .subheading.mb-1.mt-3 Languages
+                    .subheading.mb-1.mt-3 LanguagesE
                     ul.fa-ul.mb-0
                         li
                             span.fa-li
@@ -371,7 +384,7 @@ html(lang='en')
             // Publications
             section#publications.resume-section
                 .resume-section-content
-                    h2.mb-2 Publications & Posters
+                    h2.mb-2 Publications
                     .publication-box.d-flex.flex-column.flex-md-row.justify-content-between.mb-4
                         .flex-grow-1
                             h4.mb-0
@@ -405,8 +418,13 @@ html(lang='en')
                             | Bioinformatics workflows are increasingly used for sharing analyses, serving as a cornerstone for enhancing the reproducibility and shareability of bioinformatics analyses. In particular, Nextflow is a commonly used workflow system, permitting the creation of large workflows while offering substantial flexibility. An increasing number of Nextflow workflows are being shared on repositories such as GitHub. However, this tremendous opportunity to reuse existing code remains largely underutilized. In cause, the increasing complexity of workflows constitute a major obstacle to code reuse. Consequently, there is a rising need for tools that can help bioinformaticians extract valuable information from their own and others’ workflows. To facilitate workflow inspection and reuse, we developed BioFlow-Insight to automatically analyze the code of Nextflow workflows and generate useful information, particularly in the form of visual graphs depicting the workflow’s structure and representing its individual analysis steps. BioFlow-Insight is an open-source tool, available as both a command-line interface and a web service. It is accessible at https://pypi.org/project/bioflow-insight/ and https://bioflow-insight.pasteur.cloud/.
                         .flex-shrink-0
                             span.text-primary 2024
-                    
+            
+            // Posters
+            section#posters.resume-section
+                .resume-section-content
+                    h2.mb-2 Posters & Presentation
                     .publication-box.d-flex.flex-column.flex-md-row.justify-content-between.mb-4
+                        .publication-box.d-flex.flex-column.flex-md-row.justify-content-between.mb-4
                         .flex-grow-1
                             h4.mb-0
                             a(href="https://hal.science/hal-04540040v1", target="_blank") Representing bioinformatics Nextflow workflows in RO-Crate : challenges and opportunities
