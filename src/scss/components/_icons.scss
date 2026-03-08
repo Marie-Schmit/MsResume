@@ -16,6 +16,7 @@
         border-radius: 100%;
         font-size: 1.5rem;
         margin-right: 1.5rem;
+        overflow: hidden;
 
         &:last-child {
             margin-right: 0;
@@ -23,6 +24,15 @@
 
         &:hover {
             background-color: $primary;
+        }
+
+        img {
+            width: 50%;
+            height: 50%;
+            object-fit: contain;
+            // filter: brightness(0) invert(1);
+            background-color: $gray-700;
+            border-radius: 10px;
         }
     }
 }

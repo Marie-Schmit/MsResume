@@ -47,10 +47,14 @@ html(lang='en')
                         a.nav-link.js-scroll-trigger(href='#skills') Skills
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#publications') Publications
-                    //- li.nav-item
-                        //- a.nav-link.js-scroll-trigger(href='#projects') Personal Projects
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#interests') Interests & Volunteering 
+                        a.nav-link.js-scroll-trigger(href='#posters') Talks and Posters
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#trainings') Trainings
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#projects') Projects
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#interests') Interests & Volunteering
 
         // Page Content
         .container-fluid.p-0
@@ -75,6 +79,13 @@ html(lang='en')
                             i.fab.fa-github
                         a.social-icon(href='https://orcid.org/0009-0007-8119-1222')
                             i.fab.fa-orcid
+                        a.social-icon(href='https://research.pasteur.fr/fr/member/marie-schmit/')
+                            img(
+                                src='assets/img/pasteur_logo.svg'
+                                width='24'
+                                height='24'
+                                class='rounded-social-img'  
+                            )
 
             hr.m-0
 
@@ -144,12 +155,12 @@ html(lang='en')
                                 | enabling efficient metadata retrieval for the project 
                                 a(href="https://projet.liris.cnrs.fr/sharefair/") ShareFAIR.
                                 | Applying best practices on code reproducibility.
-                                | Technical integration and lead. Help coordinating the project (organisation, scheduling, communication).
+                                | Technical integration and lead. Help coordinating the project (hackathons and events organisation, scheduling, communication).
                             p
                                 strong.text-primary Tools: 
                                 | Python, Docker, SPARQL, SQL, JavaScript, Bash
                         .flex-shrink-0
-                            span.text-primary November 2023 - Present
+                            span.text-primary 2023 - Present
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
@@ -201,6 +212,8 @@ html(lang='en')
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
                             h3.mb-0 MSc Applied Bioinformatics
+                            a(href='https://www.cranfield.ac.uk/Courses/Taught/Applied-Bioinformatics', target="_blank")
+                                i.fa-solid.fa-arrow-up-right-from-square
                             .subheading.mb-3 Cranfield University (UK, Cranfield)
                             div 
                             p
@@ -215,6 +228,8 @@ html(lang='en')
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
                             h3.mb-0 System engineer in Computer Science and Microelectronics (ISMIN)
+                            a(href='https://www.mines-stetienne.fr/formation/ismin/', target="_blank")
+                                i.fa-solid.fa-arrow-up-right-from-square
                             .subheading.mb-3 Ecole des Mines de Saint-Etienne (FR, Gardanne)
                             div 
                             p
@@ -302,6 +317,10 @@ html(lang='en')
                         li
                             span.fa-li
                                 i.fa-solid.fa-diagram-project
+                            | FAIR principles
+                        li
+                            span.fa-li
+                                i.fa-solid.fa-diagram-project
                             | Snakemake, Nextflow
                         li
                             span.fa-li
@@ -310,7 +329,7 @@ html(lang='en')
                         li
                             span.fa-li
                                 i.fa-solid.fa-file-lines
-                            | Data manipulation (fasta, gff), genomic data visualisation
+                            | Data manipulation and analysis (FASTA, FASTQ, gff), genomic data visualisation (CMap)
                         li
                             span.fa-li
                                 i.fa-solid.fa-dna
@@ -333,16 +352,21 @@ html(lang='en')
                     ul.fa-ul.mb-0
                         li
                             span.fa-li
+                                i.fa-solid.fa-newspaper
+                            | Scientific writing (scientific papers, presentations)
+                        li
+                            span.fa-li
                                 i.fa-solid.fa-calendar-check
                             | Time-management, planning and organisation
                         li
                             span.fa-li
+                                i.fa-solid.fa-calendar-check
+                            | Autonomy and versatility
+                        li
+                            span.fa-li
                                 i.fas.fa-solid.fa-person-chalkboard
                             | Oral presentation, written communication
-                        li
-                            i.fa-li
-                                i.fas.fa-users
-                            | Polyvalent, multi-tasking, autonomy
+                        F
                     .subheading.mb-1.mt-3 Bureautique
                     ul.fa-ul.mb-0
                         li
@@ -371,7 +395,7 @@ html(lang='en')
             // Publications
             section#publications.resume-section
                 .resume-section-content
-                    h2.mb-2 Publications & Posters
+                    h2.mb-2 Publications
                     .publication-box.d-flex.flex-column.flex-md-row.justify-content-between.mb-4
                         .flex-grow-1
                             h4.mb-0
@@ -379,7 +403,7 @@ html(lang='en')
                             a(href="https://hal.science/hal-05517640v1/file/SWAT4HCLS_2026_ShareFAIR_KG_reviewed_final.pdf", target="_blank")
                                 i.fas.fa-file-pdf.mx-2.text-primary
                             .subheading.mb-2
-                            | Authors: Marie Schmit, Ulysse Le Clanche, George Marchment, Sarah Cohen-Boulakia, Olivier Dameron, Alban Gaignard, Frédéric Lemoine, Hervé Ménager
+                            | Authors: <strong>Marie Schmit</strong>, Ulysse Le Clanche, George Marchment, Sarah Cohen-Boulakia, Olivier Dameron, Alban Gaignard, Frédéric Lemoine, Hervé Ménager
                             p.mb-2
                             em
                                 a(href="https://www.swat4ls.org/", target="_blank") SWAT4HCLS 2026, Mar 2026, Amsterdam, Netherlands (International conference)
@@ -395,7 +419,7 @@ html(lang='en')
                             a(href="https://pasteur.hal.science/pasteur-04670359v1/file/lqae092.pdf", target="_blank")
                                 i.fas.fa-file-pdf.mx-2.text-primary
                             .subheading.mb-3
-                            | Authors: George Marchment; Bryan Brancotte; Marie Schmit; Frédéric Lemoine; Sarah Cohen-Boulakia
+                            | Authors: George Marchment; Bryan Brancotte; <strong>Marie Schmit</strong>; Frédéric Lemoine; Sarah Cohen-Boulakia
                             subheading.mb-2
                             a(href="https://doi.org/10.1093/nargab/lqae092", target="_blank") doi:10.1093/nargab/lqae092
                             p.mb-2
@@ -405,28 +429,104 @@ html(lang='en')
                             | Bioinformatics workflows are increasingly used for sharing analyses, serving as a cornerstone for enhancing the reproducibility and shareability of bioinformatics analyses. In particular, Nextflow is a commonly used workflow system, permitting the creation of large workflows while offering substantial flexibility. An increasing number of Nextflow workflows are being shared on repositories such as GitHub. However, this tremendous opportunity to reuse existing code remains largely underutilized. In cause, the increasing complexity of workflows constitute a major obstacle to code reuse. Consequently, there is a rising need for tools that can help bioinformaticians extract valuable information from their own and others’ workflows. To facilitate workflow inspection and reuse, we developed BioFlow-Insight to automatically analyze the code of Nextflow workflows and generate useful information, particularly in the form of visual graphs depicting the workflow’s structure and representing its individual analysis steps. BioFlow-Insight is an open-source tool, available as both a command-line interface and a web service. It is accessible at https://pypi.org/project/bioflow-insight/ and https://bioflow-insight.pasteur.cloud/.
                         .flex-shrink-0
                             span.text-primary 2024
-                    
+            
+            hr.m-0
+
+            hr.m-0
+            
+            // Posters
+            section#posters.resume-section
+                .resume-section-content
+                    h2.mb-2 Posters & Talks
                     .publication-box.d-flex.flex-column.flex-md-row.justify-content-between.mb-4
                         .flex-grow-1
-                            h4.mb-0
-                            a(href="https://hal.science/hal-04540040v1", target="_blank") Representing bioinformatics Nextflow workflows in RO-Crate : challenges and opportunities
-                            a(href="https://hal.science/hal-04540040v1/file/out.pdf", target="_blank")
-                                i.fas.fa-file-pdf.mx-2.text-primary
-                            .subheading.mb-3
-                            | Authors: George Marchment, Marie Schmit, Clémence Sebe, Frédéric Lemoine, Hervé Ménager, Sarah Cohen-Boulakia
+                            .d-flex.align-items-center.mb-2
+                                i.fa-solid.fa-microphone-lines
+                                h4.mb-0
+                                | A Standards-Based Knowledge Graph that Bridges Scientific Workflows, Run-Time Provenance, and Tool Registries
                             p.mb-2
                             em
-                                a(href="https://www.swat4ls.org/workshops/leiden2024/", target="_blank") Semantic Web Applications and Tools for Health Care and Life Sciences, Feb 2024, Leiden, Netherlands (International conference)
-                        .flex-shrink-0
-                            span.text-primary 2024
+                                a(href="https://www.swat4ls.org/", target="_blank") SWAT4HCLS 2026, Mar 2026, Amsterdam, Netherlands (International conference)
 
+                    .publication-box.d-flex.flex-column.flex-md-row.justify-content-between.mb-4
+                        .flex-grow-1
+                            .d-flex.align-items-center.mb-2
+                                i.fa-solid.fa-image
+                                h4.mb-0
+                                a(href="https://hal.science/hal-04540040v1", target="_blank") Representing bioinformatics Nextflow workflows in RO-Crate : challenges and opportunities
+                                a(href="https://hal.science/hal-04540040v1/file/out.pdf", target="_blank")
+                                    i.fas.fa-file-pdf.mx-2.text-primary
+                            .subheading.mb-3
+                            | Authors: George Marchment, <strong>Marie Schmit</strong>, Clémence Sebe, Frédéric Lemoine, Hervé Ménager, Sarah Cohen-Boulakia
+            hr.m-0
+
+            hr.m-0
+
+            // Trainings
+            section#trainings.resume-section
+                .resume-section-content
+                    h2.mb-2 Trainings
+                    h3.mb-2 Received
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            ul.fa-ul.mb-0
+                                li.mb-3
+                                    //- TODO
+                                    span.fa-li
+                                        i.fa-solid.fa-computer
+                                    | Scientific Python
+                                    span.text-primary 2025
+                                    br
+                                    | Jupyter, Numpy, Pandas, Matplotlib, Seaborn, Scipy, Statsmodel, Scickit-learn
+                                li.mb-3
+                                    span.fa-li
+                                        i.fa-regular.fa-file-lines
+                                    | Write and publish a scientific article
+                                    span.text-primary 2025
+                                li.mb-3
+                                    span.fa-li
+                                        i.fa-solid.fa-computer
+                                    | Best practices for reproducible bioinformatics data analysis
+                                    span.text-primary 2024
+                                    br
+                                    | Git, Docker, Apptainer, Snakemake, Nextflow
+
+            hr.m-0
+
+            hr.m-0
+
+            // Projects
+            section#projects.resume-section
+                .resume-section-content
+                    h2.mb-2 Projects
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            ul.fa-ul.mb-0
+                                li.mb-3
+                                    span.fa-li
+                                        i.fa-solid.fa-terminal
+                                    a(href="https://gitlab.liris.cnrs.fr/sharefair/knowledge_base_workflow_annotations/ShareFAIR-KG") ShareFAIR-KG
+                                    | -  
+                                    a(href="https://hal.science/hal-05517690v1") ⟨hal-05517690⟩
+                                    | (Python, Docker, SPARQL)
+                                li.mb-3
+                                    span.fa-li
+                                        i.fa-solid.fa-terminal
+                                    a(href="https://github.com/Marie-Schmit/mapoptics2.0") mapoptics
+                                    | (Java, Docker, Bash)
+
+            hr.m-0
+
+            hr.m-0
 
             // Interests
             section#interests.resume-section
                 .resume-section-content
                     h2.mb-5 Interests & Volunteering
                     .subheading.mb-1.mt-3 Volunteering
-                         .interests-container.d-flex.flex-wrap.justify-content-center.gap-4
+                        .interests-container.d-flex.flex-wrap.justify-content-center.gap-4
                             .card.d-flex.flex-column.p-3.mb-4.rounded
                                 img.card-img(src='assets/img/solidarismin.jpg', alt='Card image')
                                 .card-body
