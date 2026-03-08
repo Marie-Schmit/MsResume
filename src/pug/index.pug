@@ -48,11 +48,11 @@ html(lang='en')
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#publications') Publications
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#posters') Posters & Presentations
+                        a.nav-link.js-scroll-trigger(href='#posters') Talks and Posters
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#formations') Formations
+                        a.nav-link.js-scroll-trigger(href='#trainings') Trainings
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#projects') Personal Projects
+                        a.nav-link.js-scroll-trigger(href='#projects') Projects
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#interests') Interests & Volunteering
 
@@ -399,7 +399,7 @@ html(lang='en')
                             a(href="https://hal.science/hal-05517640v1/file/SWAT4HCLS_2026_ShareFAIR_KG_reviewed_final.pdf", target="_blank")
                                 i.fas.fa-file-pdf.mx-2.text-primary
                             .subheading.mb-2
-                            | Authors: Marie Schmit, Ulysse Le Clanche, George Marchment, Sarah Cohen-Boulakia, Olivier Dameron, Alban Gaignard, Frédéric Lemoine, Hervé Ménager
+                            | Authors: <strong>Marie Schmit</strong>, Ulysse Le Clanche, George Marchment, Sarah Cohen-Boulakia, Olivier Dameron, Alban Gaignard, Frédéric Lemoine, Hervé Ménager
                             p.mb-2
                             em
                                 a(href="https://www.swat4ls.org/", target="_blank") SWAT4HCLS 2026, Mar 2026, Amsterdam, Netherlands (International conference)
@@ -415,7 +415,7 @@ html(lang='en')
                             a(href="https://pasteur.hal.science/pasteur-04670359v1/file/lqae092.pdf", target="_blank")
                                 i.fas.fa-file-pdf.mx-2.text-primary
                             .subheading.mb-3
-                            | Authors: George Marchment; Bryan Brancotte; Marie Schmit; Frédéric Lemoine; Sarah Cohen-Boulakia
+                            | Authors: George Marchment; Bryan Brancotte; <strong>Marie Schmit</strong>; Frédéric Lemoine; Sarah Cohen-Boulakia
                             subheading.mb-2
                             a(href="https://doi.org/10.1093/nargab/lqae092", target="_blank") doi:10.1093/nargab/lqae092
                             p.mb-2
@@ -429,29 +429,59 @@ html(lang='en')
             // Posters
             section#posters.resume-section
                 .resume-section-content
-                    h2.mb-2 Posters & Presentation
+                    h2.mb-2 Posters & Talks
                     .publication-box.d-flex.flex-column.flex-md-row.justify-content-between.mb-4
-                        .publication-box.d-flex.flex-column.flex-md-row.justify-content-between.mb-4
                         .flex-grow-1
-                            h4.mb-0
-                            a(href="https://hal.science/hal-04540040v1", target="_blank") Representing bioinformatics Nextflow workflows in RO-Crate : challenges and opportunities
-                            a(href="https://hal.science/hal-04540040v1/file/out.pdf", target="_blank")
-                                i.fas.fa-file-pdf.mx-2.text-primary
-                            .subheading.mb-3
-                            | Authors: George Marchment, Marie Schmit, Clémence Sebe, Frédéric Lemoine, Hervé Ménager, Sarah Cohen-Boulakia
+                            .d-flex.align-items-center.mb-2
+                                i.fa-solid.fa-microphone-lines
+                                h4.mb-0
+                                | A Standards-Based Knowledge Graph that Bridges Scientific Workflows, Run-Time Provenance, and Tool Registries
                             p.mb-2
                             em
-                                a(href="https://www.swat4ls.org/workshops/leiden2024/", target="_blank") Semantic Web Applications and Tools for Health Care and Life Sciences, Feb 2024, Leiden, Netherlands (International conference)
-                        .flex-shrink-0
-                            span.text-primary 2024
+                                a(href="https://www.swat4ls.org/", target="_blank") SWAT4HCLS 2026, Mar 2026, Amsterdam, Netherlands (International conference)
 
+                    .publication-box.d-flex.flex-column.flex-md-row.justify-content-between.mb-4
+                        .flex-grow-1
+                            .d-flex.align-items-center.mb-2
+                                i.fa-solid.fa-image
+                                h4.mb-0
+                                a(href="https://hal.science/hal-04540040v1", target="_blank") Representing bioinformatics Nextflow workflows in RO-Crate : challenges and opportunities
+                                a(href="https://hal.science/hal-04540040v1/file/out.pdf", target="_blank")
+                                    i.fas.fa-file-pdf.mx-2.text-primary
+                            .subheading.mb-3
+                            | Authors: George Marchment, <strong>Marie Schmit</strong>, Clémence Sebe, Frédéric Lemoine, Hervé Ménager, Sarah Cohen-Boulakia
+
+            // Trainings
+            section#trainings.resume-section
+                .resume-section-content
+                    h2.mb-2 Trainings
+                    h3.mb-2 Received
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            ul.fa-ul.mb-0
+                                li
+                                    span.fa-li
+                                        i.fab.fa-linux
+                                    | Linux/Windows
+                                li
+                                    span.fa-li
+                                        i.fas.fa-network-wired
+                                    | Cluster computing (slurm)
+                                    span.text-primary 2024
+
+            
+            // Projects
+            section#trainings.resume-section
+                .resume-section-content
+                    h2.mb-5 Projects
 
             // Interests
             section#interests.resume-section
                 .resume-section-content
                     h2.mb-5 Interests & Volunteering
                     .subheading.mb-1.mt-3 Volunteering
-                         .interests-container.d-flex.flex-wrap.justify-content-center.gap-4
+                        .interests-container.d-flex.flex-wrap.justify-content-center.gap-4
                             .card.d-flex.flex-column.p-3.mb-4.rounded
                                 img.card-img(src='assets/img/solidarismin.jpg', alt='Card image')
                                 .card-body
