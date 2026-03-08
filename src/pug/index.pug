@@ -212,6 +212,8 @@ html(lang='en')
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
                             h3.mb-0 MSc Applied Bioinformatics
+                            a(href='https://www.cranfield.ac.uk/Courses/Taught/Applied-Bioinformatics', target="_blank")
+                                i.fa-solid.fa-arrow-up-right-from-square
                             .subheading.mb-3 Cranfield University (UK, Cranfield)
                             div 
                             p
@@ -226,6 +228,8 @@ html(lang='en')
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
                             h3.mb-0 System engineer in Computer Science and Microelectronics (ISMIN)
+                            a(href='https://www.mines-stetienne.fr/formation/ismin/', target="_blank")
+                                i.fa-solid.fa-arrow-up-right-from-square
                             .subheading.mb-3 Ecole des Mines de Saint-Etienne (FR, Gardanne)
                             div 
                             p
@@ -461,6 +465,7 @@ html(lang='en')
                         .flex-grow-1
                             ul.fa-ul.mb-0
                                 li
+                                    //- TODO
                                     span.fa-li
                                         i.fab.fa-linux
                                     | Linux/Windows
@@ -472,9 +477,25 @@ html(lang='en')
 
             
             // Projects
-            section#trainings.resume-section
+            section#projects.resume-section
                 .resume-section-content
-                    h2.mb-5 Projects
+                    h2.mb-2 Projects
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            ul.fa-ul.mb-0
+                                li
+                                    span.fa-li
+                                        i.fa-solid.fa-terminal
+                                    a(href="https://gitlab.liris.cnrs.fr/sharefair/knowledge_base_workflow_annotations/ShareFAIR-KG") ShareFAIR-KG
+                                    | -  
+                                    a(href="https://hal.science/hal-05517690v1") ⟨hal-05517690⟩
+                                    | (Python, Docker, SPARQL)
+                                li
+                                    span.fa-li
+                                        i.fa-solid.fa-terminal
+                                    a(href="https://github.com/Marie-Schmit/mapoptics2.0") mapoptics
+                                    | (Java, Docker, Bash)
 
             // Interests
             section#interests.resume-section
